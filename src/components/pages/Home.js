@@ -1,8 +1,16 @@
+import { useEffect } from "react";
+
 function Home() {
-    return (
-        
-        <h1>Home 1</h1>
-    );
+
+  useEffect(() => {
+    document.title = "Home | Meu Portfólio";
+  }, []);
+
+  return (
+    <div>
+      <h1>Home</h1>
+    </div>
+  );
 }
 
 export default Home;
