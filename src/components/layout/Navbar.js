@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
+import ThemeToggle from "./../ThemeToggle";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-[#0d2438] text-white shadow-md">
+  <nav className="bg-white dark:bg-primary text-black dark:text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
 
@@ -17,10 +18,25 @@ function Navbar() {
 
           {/* Menu Desktop */}
           <div className="hidden md:flex gap-6 text-lg">
-            <Link to="/" className="hover:text-gray-200">Home</Link>
-            <Link to="/sobre" className="hover:text-gray-200">Sobre</Link>
-            {/* <Link to="/projetos" className="hover:text-gray-200">Projetos</Link> */}
-            {/* <Link to="/contato" className="hover:text-gray-200">Contato</Link> */}
+            <button onClick={() => document.getElementById("inicio").scrollIntoView({behavior:"smooth"})}
+            className="hover:text-gray-200">Início</button>
+            <button 
+              onClick={() => document.getElementById("sobre").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+              Sobre
+            </button>
+
+             <button 
+              onClick={() => document.getElementById("tecnologias").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+                Tecnologias
+            </button>
+
+
+            <ThemeToggle />
+
           </div>
 
           {/* Botão Mobile */}
@@ -35,11 +51,23 @@ function Navbar() {
 
       {/* Menu Mobile */}
       {open && (
-        <div className="md:hidden bg-[#0d2438] px-4 pb-4 flex flex-col gap-4 text-lg">
-          <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link to="/sobre" onClick={() => setOpen(false)}>Sobre</Link>
-          {/* <Link to="/projetos" onClick={() => setOpen(false)}>Projetos</Link> */}
-          {/* <Link to="/contato" onClick={() => setOpen(false)}>Contato</Link> */}
+        <div className="md:hidden bg-secondary dark:bg-secondary-dark text-black dark:text-white px-4 pb-4 flex flex-col gap-4 text-lg">
+          <button onClick={() => document.getElementById("inicio").scrollIntoView({behavior:"smooth"})}
+            className="hover:text-gray-200">Início</button>
+          <button 
+              onClick={() => document.getElementById("sobre").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+              Sobre
+          </button>
+          <button 
+              onClick={() => document.getElementById("tecnologias").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+              Tecnologias
+          </button>
+
+          <ThemeToggle />
         </div>
       )}
     </nav>

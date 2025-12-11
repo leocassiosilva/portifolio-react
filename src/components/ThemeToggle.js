@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
+import React from "react";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("light");
 
-  useEffect(() => {
+  useEffect(function () {
     const savedTheme = localStorage.getItem("theme");
 
     if (savedTheme === "dark") {
@@ -27,16 +28,14 @@ export default function ThemeToggle() {
     }
   }
 
-  return (
-    <button
-      onClick={toggleTheme}
-      className="p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition-all hover:scale-110"
-    >
-      {theme === "light" ? (
-        <Moon size={22} className="text-gray-900" />
-      ) : (
-        <Sun size={22} className="text-yellow-300" />
-      )}
-    </button>
+  return React.createElement(
+    "button",
+    {
+      onClick: toggleTheme,
+      className: "p-2 rounded-full bg-gray-200 dark:bg-gray-800 transition-all hover:scale-110"
+    },
+    theme === "light"
+      ? React.createElement(Moon, { size: 22, className: "text-gray-900" })
+      : React.createElement(Sun, { size: 22, className: "text-yellow-300" })
   );
 }
