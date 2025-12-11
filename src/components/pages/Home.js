@@ -20,7 +20,9 @@ function Home() {
 
   return (
   <div className="flex flex-col md:flex-row items-center justify-center gap-16 px-10 py-20 min-h-[80vh]">
-  
+    {/* <div className="absolute top-5 right-5">
+      <ThemeToggle />
+    </div> */}
     {/* CONTAINER DO TEXTO */}
     <div className="md:w-1/2 flex justify-center">
       <motion.div

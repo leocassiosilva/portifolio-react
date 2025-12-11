@@ -1,7 +1,11 @@
-function Container ({children}) {
+function Container({ children }) {
     return (
-        <main className="bg-[#0d2438] text-white  w-full h-full">
-               {children}
+        <main className="
+            w-full min-h-screen
+            bg-white text-black
+            dark:bg-[#0d2438] dark:text-white
+        ">
+            {children}
         </main>
     );
 }
