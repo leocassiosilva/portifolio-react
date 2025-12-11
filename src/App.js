@@ -1,28 +1,32 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-/* componentes*/
+/* componentes */
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Container from './components/layout/Container';
 
-
-/* pages*/ 
+/* pages */
 import Home from './components/pages/Home';
-// import Home from './components/pages/Home';
-
+import Sobre from './components/pages/Sobre';
 function App() {
   return (
-    <Router>
+    <div className="min-h-screen flex flex-col">   
+      <Router>
         <Navbar />
-        <Container>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
-        </Container>
+
+        <div className="flex-grow">
+          <Container>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/sobre" element={<Sobre />} />
+            </Routes>
+          </Container>
+        </div>
+
         <Footer />
-    </Router>
+      </Router>
+    </div>
   );
 }
 
 export default App;
-

@@ -18,9 +18,9 @@ function Navbar() {
           {/* Menu Desktop */}
           <div className="hidden md:flex gap-6 text-lg">
             <Link to="/" className="hover:text-gray-200">Home</Link>
-            <Link to="/projetos" className="hover:text-gray-200">Projetos</Link>
             <Link to="/sobre" className="hover:text-gray-200">Sobre</Link>
-            <Link to="/contato" className="hover:text-gray-200">Contato</Link>
+            {/* <Link to="/projetos" className="hover:text-gray-200">Projetos</Link> */}
+            {/* <Link to="/contato" className="hover:text-gray-200">Contato</Link> */}
           </div>
 
           {/* Botão Mobile */}
@@ -37,9 +37,9 @@ function Navbar() {
       {open && (
         <div className="md:hidden bg-blue-600 px-4 pb-4 flex flex-col gap-4 text-lg">
           <Link to="/" onClick={() => setOpen(false)}>Home</Link>
-          <Link to="/projetos" onClick={() => setOpen(false)}>Projetos</Link>
           <Link to="/sobre" onClick={() => setOpen(false)}>Sobre</Link>
-          <Link to="/contato" onClick={() => setOpen(false)}>Contato</Link>
+          {/* <Link to="/projetos" onClick={() => setOpen(false)}>Projetos</Link> */}
+          {/* <Link to="/contato" onClick={() => setOpen(false)}>Contato</Link> */}
         </div>
       )}
     </nav>

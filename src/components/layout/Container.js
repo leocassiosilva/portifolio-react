@@ -1,6 +1,6 @@
 function Container ({children}) {
     return (
-        <main>
+        <main className="w-full h-full">
                {children}
         </main>
     );

@@ -1,11 +1,10 @@
 function Footer() {
   return (
-    <footer className="bg-blue-600 text-white py-24 mt-12">
-  <div className="max-w-6xl mx-auto px-8 text-center">
-    <span className="text-lg">©2025 <a href="#" className="underline">Leocassio</a>.</span>
-  </div>
-</footer>
-
+    <footer className="bg-blue-600 text-white py-10">
+      <div className="max-w-6xl mx-auto px-8 text-center">
+        <span className="text-sm">©2025 Leocassio — Todos os direitos reservados.</span>
+      </div>
+    </footer>
   );
 }
 
