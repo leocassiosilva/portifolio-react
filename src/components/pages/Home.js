@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import minhaFoto from "../../assets/img/undraw_programming_j1zw.png";
+import minhaFoto from "../../assets/img/Programming-rafiki.png";
 import curriculoPDF from "../../assets/curriculo/francisco_leocassio.pdf";
 import { Github, Linkedin, Instagram } from "lucide-react";
 import ThemeToggle from "../../components/ThemeToggle";
@@ -20,9 +20,7 @@ function Home() {
 
   return (
   <div className="flex flex-col md:flex-row items-center justify-center gap-16 px-10 py-20 min-h-[80vh]">
-    <div className="absolute top-5 right-5">
-      <ThemeToggle />
-    </div>
+  
     {/* CONTAINER DO TEXTO */}
     <div className="md:w-1/2 flex justify-center">
       <motion.div

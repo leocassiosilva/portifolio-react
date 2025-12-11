@@ -6,7 +6,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-600 text-white shadow-md">
+    <nav className="bg-[#0d2438] text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
 
@@ -35,7 +35,7 @@ function Navbar() {
 
       {/* Menu Mobile */}
       {open && (
-        <div className="md:hidden bg-blue-600 px-4 pb-4 flex flex-col gap-4 text-lg">
+        <div className="md:hidden bg-[#0d2438] px-4 pb-4 flex flex-col gap-4 text-lg">
           <Link to="/" onClick={() => setOpen(false)}>Home</Link>
           <Link to="/sobre" onClick={() => setOpen(false)}>Sobre</Link>
           {/* <Link to="/projetos" onClick={() => setOpen(false)}>Projetos</Link> */}

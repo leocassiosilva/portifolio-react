@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Navbar />
 
-        <div className="flex-grow">
+        <div className="bg-[#0d2438] flex-grow">
           <Container>
             <Routes>
               <Route path="/" element={<Home />} />
