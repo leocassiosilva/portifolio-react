@@ -7,7 +7,7 @@ import { DiJava } from "react-icons/di"; // Java
 import { SiDjango, SiJavascript, SiNodedotjs, SiPostgresql, SiPython, SiReact, SiHtml5, SiCss3, SiMongodb, SiMysql } from "react-icons/si";
 import ArtigoCard from "../layout/ArtigoCard";
 import SectionDivider from "../layout/SectionDivider";
-
+import ExperienciaCard from "../layout/ExperienciaCard";
 function Home() {
 
   const tecnologiasPassadas = [
@@ -23,6 +23,46 @@ function Home() {
     { name: "MySQL", icon: <SiMysql /> },
     { name: "Mongoose", icon: <SiMongodb /> },
   ];
+
+
+  const experiencias = [
+    {
+      empresa: "Novadata",
+      cargo: "Desenvolvedor Backend (Python | Django)",
+      periodo: "Set 2023 – Out 2025",
+      atividades: [
+        "Desenvolvimento e manutenção de aplicações web",
+        "Criação e integração de APIs RESTful",
+        "Automação e Web Scraping com Selenium WebDriver",
+        "Modelagem e consultas em PostgreSQL/SQL",
+        "Controle de versão com Git/GitHub",
+        "Participação em reuniões Scrum"
+      ]
+    },
+    {
+      empresa: "Novadata",
+      cargo: "Estagiário Backend (Python | Django)",
+      periodo: "Jun 2022 – Set 2023",
+      atividades: [
+        "Apoio no desenvolvimento de aplicações web",
+        "Implementação de APIs REST",
+        "Criação de rotinas de Web Scraping",
+        "Versionamento com Git/GitHub"
+      ]
+    },
+    {
+      empresa: "NADIC",
+      cargo: "Desenvolvedor Full Stack Web",
+      periodo: "Nov 2020 – Jun 2022",
+      atividades: [
+        "Desenvolvimento com Python/Django",
+        "Desenvolvimento de Web Scraping",
+        "Criação de API com Django Rest Framework"
+      ]
+    }
+  ];
+
+
 
   useEffect(() => {
     document.title = "Home | Meu Portfólio";
@@ -111,7 +151,6 @@ function Home() {
         </div>
       </section>
 
-      {/* <hr className="border-gray-300 my-16 dark:border-gray-600" /> */}
       <SectionDivider />  
       
       {/* ============================
@@ -149,7 +188,6 @@ function Home() {
         </motion.div>
       </section>
 
-      {/* <hr className="border-gray-300 my-16 dark:border-gray-600" /> */}
       <SectionDivider />
 
 
@@ -174,7 +212,6 @@ function Home() {
         </motion.div>
       </section>
 
-      {/* <hr className="border-gray-300 my-16 dark:border-gray-600 max-w-[80%] mx-auto" /> */}
       <SectionDivider />  
 
       <section id="artigos" className="max-w-6xl mx-auto px-4 py-16">
@@ -232,27 +269,31 @@ function Home() {
             </motion.div>
       </section>
 
-      {/* <hr className="border-gray-300 my-16 dark:border-gray-600 max-w-[80%] mx-auto" /> */}
       <SectionDivider />  
 
- 
-      {/* <section id="artigos" className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-3xl font-bold mb-8 text-center">Artigos Publicados</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> */}
-          {/* Exemplo de card */}
-          {/* <div className="bg-white dark:bg-[#374151] shadow-md p-4 rounded">
-            <h3 className="font-semibold text-lg mb-2">Título do Artigo</h3>
-            <p className="text-sm mb-2">Evento/Periódico</p>
-            <p className="text-gray-600 dark:text-gray-300 text-sm">Resumo curto do artigo ou descrição.</p>
-            <a href="#" className="text-blue-500 mt-2 inline-block hover:underline">Ver artigo</a>
-          </div> */}
-
-          {/* Repetir para outros artigos */}
-        {/* </div>
-      </section> */}
-
-
-
+    {/* ============================EXPERIÊNCIA PROFISSIONAL =========================== */}
+      <section id="experiencia" className="max-w-6xl mx-auto px-4 py-16">
+        
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+          <h2 className="text-3xl font-bold text-center mb-8">Experiência Profissional</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {experiencias.map((exp, index) => (
+            <ExperienciaCard
+              key={index}
+              empresa={exp.empresa}
+              cargo={exp.cargo}
+              periodo={exp.periodo}
+              atividades={exp.atividades}
+            />
+          ))}
+        </div>
+        </motion.div>
+      </section>
+      <SectionDivider /> 
     </div>
   );
 }

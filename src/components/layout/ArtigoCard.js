@@ -5,7 +5,7 @@ function ArtigoCard({ titulo, evento, resumo, link }) {
     <motion.div
       whileHover={{ scale: 1.05 }}
       transition={{ type: "spring", stiffness: 300 }}
-      className="bg-white dark:bg-[#374151] shadow-md p-4 rounded cursor-pointer hover:shadow-xl"
+      className="bg-white dark:bg-card-dark shadow-md p-4 rounded hover:shadow-xl"
     >
       <h3 className="font-semibold text-lg mb-2">{titulo}</h3>
       <p className="text-sm mb-2">{evento}</p>

@@ -7,7 +7,7 @@ function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-  <nav className="bg-white dark:bg-primary text-black dark:text-white shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-primary text-black dark:text-white shadow-md">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
 
@@ -40,6 +40,12 @@ function Navbar() {
               className="hover:text-gray-200"
             >
                 Produção Acadêmica 
+            </button>
+            <button 
+              onClick={() => document.getElementById("experiencia").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+                Experiência Profissional
             </button>
 
             <ThemeToggle />
@@ -78,6 +84,12 @@ function Navbar() {
               className="hover:text-gray-200"
             >
                 Produção Acadêmica 
+            </button>
+            <button 
+              onClick={() => document.getElementById("experiencia").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+                Experiência Profissional
             </button>
           <ThemeToggle />
         </div>
