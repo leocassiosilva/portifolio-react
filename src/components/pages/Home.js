@@ -71,7 +71,7 @@ function Home() {
   function handleDownload() {
     const link = document.createElement("a");
     link.href = curriculoPDF;
-    link.download = "seu-curriculo.pdf";
+    link.download = "francisco_leocassio.pdf";
     link.click();
   }
 
