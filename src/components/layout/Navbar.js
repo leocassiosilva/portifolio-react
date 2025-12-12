@@ -35,6 +35,13 @@ function Navbar() {
             </button>
 
 
+            <button 
+              onClick={() => document.getElementById("artigos").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+                Produção Acadêmica 
+            </button>
+
             <ThemeToggle />
 
           </div>
@@ -66,7 +73,12 @@ function Navbar() {
             >
               Tecnologias
           </button>
-
+          <button 
+              onClick={() => document.getElementById("artigos").scrollIntoView({ behavior: "smooth" })}
+              className="hover:text-gray-200"
+            >
+                Produção Acadêmica 
+            </button>
           <ThemeToggle />
         </div>
       )}

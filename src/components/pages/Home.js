@@ -184,34 +184,50 @@ function Home() {
             transition={{ duration: 0.7 }}
           >
           <h2 className="text-3xl font-bold mb-8 text-center">
-            Artigos Publicados
+            Produção Acadêmica 
           </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
               <ArtigoCard
-                titulo="Título do Artigo 1"
-                evento="Evento/Periódico XYZ"
-                resumo="Resumo curto do artigo ou descrição."
-                link="#"
+                titulo="A MÁQUINA E AS RELAÇÕES LÍQUIDAS EM “HER”"
+                evento="EXPOSIÇÃO CIENTÍFICA,TECNOLÓGICAECULTURAL(EXPOTEC) - 2018"
+                link="https://memoria.ifrn.edu.br/bitstream/handle/1044/1808/ANAIS%20-%20Expotec%20Pau%20dos%20ferros%202018%20-%20baixares%20%281%29.pdf?sequence=1&isAllowed=y"
+              />
+
+
+              <ArtigoCard
+                titulo="Análise das dificuldades na aprendizagem de programação no curso de análise e desenvolvimento de sistemas do IFRN/Pau dos Ferros"
+                evento="Anais do XIV Encontro Unificado de Computação do Piauí e XI Simpósio de Sistemas de Informação do Piauí (ENUCOMPI 2021)"
+                link="https://doi.org/10.5753/enucompi.2021.17752"
+              />
+              <ArtigoCard
+                titulo="Bewell: Protótipo mobile para auxiliar pessoas em crises de ansiedade"
+                evento="Anais do VI Encontro de Computação do Oeste Potiguar (ECOP 2022)"
+                link="https://periodicos.ufersa.edu.br/index.php/ecop/article/view/11829/11170"
+              />
+              <ArtigoCard
+                titulo="Ampliando as Oportunidades por Meio do Desenvolvimento de Competências Técnicas Com Programação Aplicada: Um relato de Experiência"
+                evento="Anais do VI Encontro de Computação do Oeste Potiguar (ECOP 2022)"
+                link="https://periodicos.ufersa.edu.br/index.php/ecop/article/view/11824/11164"
               />
 
               <ArtigoCard
-                titulo="Título do Artigo 1"
-                evento="Evento/Periódico XYZ"
-                resumo="Resumo curto do artigo ou descrição."
-                link="#"
+                titulo="Mineração de Texto para extrair informações de certidões federais e estaduais solicitadas em processos licitatórios"
+                evento="Anais do VI Encontro de Computação do Oeste Potiguar (ECOP 2022)"
+                link="https://periodicos.ufersa.edu.br/index.php/ecop/article/view/11845/11163"
+              />
+
+              <ArtigoCard
+                titulo="MONEMOTION: UMA PROPOSTA DE UMA PLATAFORMA WEB PARA O MONITORAMENTO DE EMOÇÕES"
+                evento="Anais do VI Encontro de Computação do Oeste Potiguar (ECOP 2023)"
+                link="https://revistacaatinga.com.br/index.php/ecop/article/view/12218/11390"
               />
               <ArtigoCard
-                titulo="Título do Artigo 1"
-                evento="Evento/Periódico XYZ"
-                resumo="Resumo curto do artigo ou descrição."
-                link="#"
+                titulo="NossaVaga: Proposta de uma Plataforma Web para divulgação de vagas de estágios e empregos"
+                evento="Anais do VI Encontro de Computação do Oeste Potiguar (ECOP 2023)"
+                link="https://periodicos.ufersa.edu.br/index.php/ecop/article/view/12219/11389"
               />
-              <ArtigoCard
-                titulo="Título do Artigo 1"
-                evento="Evento/Periódico XYZ"
-                resumo="Resumo curto do artigo ou descrição."
-                link="#"
-              />
+
             </div>
             </motion.div>
       </section>
