@@ -51,7 +51,7 @@ function Navbar() {
 
       {/* Menu Mobile */}
       {open && (
-        <div className="md:hidden bg-secondary dark:bg-secondary-dark text-black dark:text-white px-4 pb-4 flex flex-col gap-4 text-lg">
+      <div className="md:hidden bg-secondary dark:bg-secondary-dark text-black dark:text-white px-4 pb-4 flex flex-col items-center gap-4 text-lg">
           <button onClick={() => document.getElementById("inicio").scrollIntoView({behavior:"smooth"})}
             className="hover:text-gray-200">Início</button>
           <button 
