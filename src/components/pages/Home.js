@@ -5,6 +5,8 @@ import curriculoPDF from "../../assets/curriculo/francisco_leocassio.pdf";
 import { Github, Linkedin, Instagram } from "lucide-react"; 
 import { DiJava } from "react-icons/di"; // Java
 import { SiDjango, SiJavascript, SiNodedotjs, SiPostgresql, SiPython, SiReact, SiHtml5, SiCss3, SiMongodb, SiMysql } from "react-icons/si";
+import ArtigoCard from "../layout/ArtigoCard";
+import SectionDivider from "../layout/SectionDivider";
 
 function Home() {
 
@@ -109,8 +111,8 @@ function Home() {
         </div>
       </section>
 
-      <hr className="border-gray-300 my-16 dark:border-gray-600" />
-
+      {/* <hr className="border-gray-300 my-16 dark:border-gray-600" /> */}
+      <SectionDivider />  
       
       {/* ============================
           SEÇÃO 2 — SOBRE MIM
@@ -119,36 +121,47 @@ function Home() {
         id="sobre"
         className="flex flex-col justify-center px-10 py-10 max-w-4xl mx-auto"
       >
-        <h1 className="text-3xl font-bold mb-6">Sobre Mim</h1>
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+          <h1 className="text-3xl font-bold mb-6 text-center">Sobre Mim</h1>
 
-        <p className="text-lg mb-4 leading-relaxed">
-          Sou desenvolvedor com foco em <strong>Python e Django</strong>, especializado na criação
-          de APIs REST, automação de processos e backends escaláveis. Também trabalho com Selenium
-          e web scraping, criando soluções eficientes e inteligentes.
-        </p>
+          <p className="text-lg mb-4 leading-relaxed">
+            Sou desenvolvedor com foco em <strong>Python e Django</strong>, especializado na criação
+            de APIs REST, automação de processos e backends escaláveis. Também trabalho com Selenium
+            e web scraping, criando soluções eficientes e inteligentes.
+          </p>
 
-        <p className="text-lg mb-4 leading-relaxed">
-          Atualmente estou me aprofundando em tecnologias <strong>JavaScript</strong>, como 
-          <strong> Node.js, React.js e React Native</strong>, para expandir minhas habilidades e
-          complementar meu trabalho principal no backend.
-        </p>
+          <p className="text-lg mb-4 leading-relaxed">
+            Atualmente estou me aprofundando em tecnologias <strong>JavaScript</strong>, como 
+            <strong> Node.js, React.js e React Native</strong>, para expandir minhas habilidades e
+            complementar meu trabalho principal no backend.
+          </p>
 
-        <p className="text-lg leading-relaxed">
-          Sou formado em <strong>Licenciatura em Computação</strong> e também em
-          <strong> Análise e Desenvolvimento de Sistemas</strong>. 
-          Gosto de desenvolver soluções completas — da lógica ao código final — buscando clareza,
-          qualidade e impacto real.
-        </p>
+          <p className="text-lg leading-relaxed">
+            Sou formado em <strong>Licenciatura em Computação</strong> e também em
+            <strong> Análise e Desenvolvimento de Sistemas</strong>. 
+            Gosto de desenvolver soluções completas — da lógica ao código final — buscando clareza,
+            qualidade e impacto real.
+          </p>
+        </motion.div>
       </section>
 
-      <hr className="border-gray-300 my-16 dark:border-gray-600" />
-
+      {/* <hr className="border-gray-300 my-16 dark:border-gray-600" /> */}
+      <SectionDivider />
 
 
       {/* ============================ Tecnologias =========================== */}
       <section
         id="tecnologias"
         className="flex flex-col justify-center px-10 py-10 max-w-4xl mx-auto">
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
         <h2 className="text-3xl font-bold mb-8 text-center">Tecnologias</h2>
         
         <div className="flex flex-wrap gap-3">
@@ -158,10 +171,55 @@ function Home() {
             </span>
           ))}
         </div>
-        
+        </motion.div>
       </section>
 
+      {/* <hr className="border-gray-300 my-16 dark:border-gray-600 max-w-[80%] mx-auto" /> */}
+      <SectionDivider />  
 
+      <section id="artigos" className="max-w-6xl mx-auto px-4 py-16">
+        <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.7 }}
+          >
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            Artigos Publicados
+          </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <ArtigoCard
+                titulo="Título do Artigo 1"
+                evento="Evento/Periódico XYZ"
+                resumo="Resumo curto do artigo ou descrição."
+                link="#"
+              />
+
+              <ArtigoCard
+                titulo="Título do Artigo 1"
+                evento="Evento/Periódico XYZ"
+                resumo="Resumo curto do artigo ou descrição."
+                link="#"
+              />
+              <ArtigoCard
+                titulo="Título do Artigo 1"
+                evento="Evento/Periódico XYZ"
+                resumo="Resumo curto do artigo ou descrição."
+                link="#"
+              />
+              <ArtigoCard
+                titulo="Título do Artigo 1"
+                evento="Evento/Periódico XYZ"
+                resumo="Resumo curto do artigo ou descrição."
+                link="#"
+              />
+            </div>
+            </motion.div>
+      </section>
+
+      {/* <hr className="border-gray-300 my-16 dark:border-gray-600 max-w-[80%] mx-auto" /> */}
+      <SectionDivider />  
+
+ 
       {/* <section id="artigos" className="max-w-6xl mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold mb-8 text-center">Artigos Publicados</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"> */}
