@@ -13,7 +13,7 @@ function Navbar() {
 
           {/* Logo */}
           <Link to="/" className="text-2xl font-bold">
-            MeuPortfólio
+            Leocassio
           </Link>
 
           {/* Menu Desktop */}
