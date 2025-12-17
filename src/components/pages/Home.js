@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
-import minhaFoto from "../../assets/img/Programming-rafiki.png";
+// import minhaFoto from "../../assets/img/Programming-rafiki.png";
+import minhaFoto from "../../assets/img/leocassio.png";
 import curriculoPDF from "../../assets/curriculo/francisco_leocassio.pdf";
 import { Github, Linkedin, Instagram } from "lucide-react"; 
 import { DiJava } from "react-icons/di"; // Java
@@ -136,18 +137,32 @@ function Home() {
         </div>
 
         {/* IMAGEM */}
-        <div className="md:w-1/3 flex justify-center">
-          <motion.div
+        <div className="md:w-1/4 flex justify-center ">
+          <motion.img
+            src={minhaFoto}
+            alt="Ilustração Programação"
+            className="cursor-pointer"
             initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.7 }}
-          >
-            <img
-              src={minhaFoto}
-              alt="Ilustração Programação"
-              className="transition-transform duration-300 hover:scale-110"
-            />
-          </motion.div>
+            animate={{
+              opacity: 1,
+              x: 0,
+              y: [0, -10, 0],
+            }}
+            whileHover={{
+              scale: 1.08,
+            }}
+            transition={{
+              opacity: { duration: 0.6 },
+              x: { duration: 0.6 },
+              y: {
+                duration: 3,
+                repeat: Infinity,
+                ease: "easeInOut",
+              },
+            }}
+          />
+
+
         </div>
       </section>
 
@@ -158,7 +173,7 @@ function Home() {
       ============================ */}
       <section
         id="sobre"
-        className="flex flex-col justify-center px-10 py-10 max-w-4xl mx-auto"
+        className="scroll-mt-24 flex flex-col justify-center px-10 py-10 max-w-4xl mx-auto"
       >
         <motion.div
             initial={{ opacity: 0, x: 50 }}
@@ -194,7 +209,7 @@ function Home() {
       {/* ============================ Tecnologias =========================== */}
       <section
         id="tecnologias"
-        className="flex flex-col justify-center px-10 py-10 max-w-4xl mx-auto">
+        className="scroll-mt-24 flex flex-col justify-center px-10 py-10 max-w-4xl mx-auto">
         <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
