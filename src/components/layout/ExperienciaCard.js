@@ -16,8 +16,8 @@ function ExperienceCard({ empresa, cargo, periodo, atividades }) {
       </p>
 
       <ul className="text-gray-600 dark:text-gray-300 text-sm space-y-1">
-        {atividades.map((item, index) => (
-          <li key={index}>• {item}</li>
+        {atividades.map((item) => (
+          <li key={item}>• {item}</li>
         ))}
       </ul>
     </motion.div>

@@ -8,8 +8,8 @@ const schema = {
   "jobTitle": "Analista de Sistemas",
   "description": "Analista de Sistemas com experiência em desenvolvimento de software e soluções tecnológicas. Disponível para oportunidades CLT e freelance.",
   "sameAs": [
-    "https://www.linkedin.com/in/SEU-LINKEDIN-AQUI",
-    "https://github.com/SEU-GITHUB-AQUI"
+    "https://www.linkedin.com/in/leocassio-silva/",
+    "https://github.com/leocassiosilva"
   ],
   "knowsAbout": [
     "Análise de Sistemas",
