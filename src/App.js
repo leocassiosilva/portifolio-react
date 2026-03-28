@@ -6,6 +6,7 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Container from './components/layout/Container';
 import SeoSchema from './components/SeoSchema';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 /* pages */
 import Home from './components/pages/Home';
@@ -38,6 +39,7 @@ function App() {
           </div>
 
           <Footer />
+          <ScrollToTop />
         </Router>
       </div>
     </MotionConfig>

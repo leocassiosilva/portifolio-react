@@ -7,8 +7,10 @@ const navItems = [
   { label: "Início", target: "inicio" },
   { label: "Sobre", target: "sobre" },
   { label: "Tecnologias", target: "tecnologias" },
-  { label: "Produção Acadêmica", target: "artigos" },
-  { label: "Experiência Profissional", target: "experiencia" },
+  { label: "Projetos", target: "projetos" },
+  { label: "Artigos", target: "artigos" },
+  { label: "Experiência", target: "experiencia" },
+  { label: "Contato", target: "contato" },
 ];
 
 function scrollToSection(id, navigate) {
