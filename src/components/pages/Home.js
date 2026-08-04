@@ -194,7 +194,7 @@ function Home() {
               </a>
 
               <a
-                href="mailto:leocassiosilva@gmail.com"
+                href="mailto:leocassiosilva1234@gmail.com"
                 aria-label="Enviar email"
                 className="text-gray-600 dark:text-gray-400 hover:text-red-600 dark:hover:text-red-400 hover:scale-110 transition-all"
               >
@@ -424,14 +424,14 @@ function Home() {
 
           <div className="grid md:grid-cols-3 gap-6 mb-10">
             <motion.a
-              href="mailto:leocassiosilva@gmail.com"
+              href="mailto:leocassiosilva1234@gmail.com"
               whileHover={{ scale: 1.05, y: -4 }}
               className="flex flex-col items-center gap-3 bg-white dark:bg-card-dark p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow"
             >
               <Mail size={32} className="text-red-500" />
               <span className="font-semibold">E-mail</span>
               <span className="text-sm text-gray-600 dark:text-gray-400">
-                leocassiosilva@gmail.com
+                leocassiosilva1234@gmail.com
               </span>
             </motion.a>
 
@@ -466,7 +466,7 @@ function Home() {
 
           <div className="text-center">
             <motion.a
-              href="mailto:leocassiosilva@gmail.com"
+              href="mailto:leocassiosilva1234@gmail.com"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-colors text-lg"
